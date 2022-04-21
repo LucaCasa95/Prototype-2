@@ -3039,6 +3039,7 @@ GameObject:
   - component: {fileID: 1335960700398919565}
   - component: {fileID: 1335960700962027189}
   - component: {fileID: 776247775086370499}
+  - component: {fileID: 4454646784488183089}
   m_Layer: 0
   m_Name: BullTerrier
   m_TagString: Untagged
@@ -3141,6 +3142,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54e02b8b61b782641b13773de795058c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &4454646784488183089
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335960700408515007}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.08131957, y: 0.22565973, z: 0.27571404}
+  m_Center: {x: -0.0008893013, y: 0.108439624, z: 0.027440727}
 --- !u!1 &1335960700408517825
 GameObject:
   m_ObjectHideFlags: 0
