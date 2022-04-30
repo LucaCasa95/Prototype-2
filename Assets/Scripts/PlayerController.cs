@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     public float zRange = 15.0f;
     public float bulletOffset = 1f;
     private float zero = 0f;
+    private int lives = 3;
 
     public GameObject bulletPrefab;
 
