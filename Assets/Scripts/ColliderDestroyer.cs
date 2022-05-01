@@ -21,12 +21,14 @@ public class ColliderDestroyer : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        //Debug.Log("io sono " + gameObject.name + " e mi ha toccato " + other.gameObject.name);
         if(other.gameObject.name.Contains("Bone")) {
-            lifeManager.IncreaseScore();
-            Destroy(gameObject);
+            //animal hit by bone
+            gameObject.GetComponent<AnimalHunger>().FeedAnimal(1);
+            //lifeManager.IncreaseScore();
+            //Destroy(gameObject);
             Destroy(other.gameObject);
         } else if(other.gameObject.name.Contains("Player")) {
+            //player hit by animal
             lifeManager.DescreaseLife();
         }
     }
