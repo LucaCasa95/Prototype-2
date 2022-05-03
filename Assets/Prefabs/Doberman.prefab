@@ -1057,11 +1057,11 @@ GameObject:
   - component: {fileID: 5393097374514927955}
   - component: {fileID: 1285637182121413478}
   - component: {fileID: 238067863074247580}
-  - component: {fileID: 536497996625561737}
   - component: {fileID: -8252814337890070150}
+  - component: {fileID: -8177757825892712975}
   m_Layer: 0
   m_Name: Doberman
-  m_TagString: Untagged
+  m_TagString: Dog
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1149,7 +1149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dd9e592a600d4149ad4078cc0bfb22d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 2
 --- !u!114 &1285637182121413478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1175,18 +1175,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.079957694, y: 0.22834982, z: 0.26203048}
   m_Center: {x: -0.0014066242, y: 0.1009252, z: 0.032644954}
---- !u!114 &536497996625561737
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5393097374254778106}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf4e2d71f66cd6543b8591ebfe103bce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &-8252814337890070150
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1201,7 +1189,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hungerSlider: {fileID: 6076528627639917274}
   amountToBeFed: 2
-  deathSound: {fileID: 0}
+--- !u!114 &-8177757825892712975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5393097374254778106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 668074e685262af4da65f04789492065, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5393097374254779458
 GameObject:
   m_ObjectHideFlags: 0

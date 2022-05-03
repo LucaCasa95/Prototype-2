@@ -9,7 +9,7 @@ public class SpawnManager : MonoBehaviour
     private float spawnRangeZ = 20;
     //spawn timer
     private float startDelay = 2;
-    private float frequencyInterval = 1.5f;
+    private float frequencyInterval = 4f;
     //rotation
     private float rotation = 90f;
 

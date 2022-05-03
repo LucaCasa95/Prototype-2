@@ -3040,12 +3040,12 @@ GameObject:
   - component: {fileID: 1335960700962027189}
   - component: {fileID: 776247775086370499}
   - component: {fileID: 4454646784488183089}
-  - component: {fileID: -6200899323808099069}
   - component: {fileID: 903311166}
   - component: {fileID: 6405685717821980688}
+  - component: {fileID: -370546902942282959}
   m_Layer: 0
   m_Name: BullTerrier
-  m_TagString: Untagged
+  m_TagString: Dog
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3133,7 +3133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dd9e592a600d4149ad4078cc0bfb22d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 2
 --- !u!114 &776247775086370499
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3159,18 +3159,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.08131957, y: 0.22565973, z: 0.27571404}
   m_Center: {x: -0.0008893013, y: 0.108439624, z: 0.027440727}
---- !u!114 &-6200899323808099069
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1335960700408515007}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf4e2d71f66cd6543b8591ebfe103bce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &903311166
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3185,7 +3173,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hungerSlider: {fileID: 8057969720312621142}
   amountToBeFed: 1
-  deathSound: {fileID: 6405685717821980688}
 --- !u!82 &6405685717821980688
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3193,7 +3180,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1335960700408515007}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: bd8857660a16ba549b8cc522d93d9117, type: 3}
@@ -3282,6 +3269,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-370546902942282959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335960700408515007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 668074e685262af4da65f04789492065, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1335960700408517825
 GameObject:
   m_ObjectHideFlags: 0
