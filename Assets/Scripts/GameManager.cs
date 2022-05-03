@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class LifeManager : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
     private int playerLifes = 3;
     private int score = 0;
@@ -18,15 +18,8 @@ public class LifeManager : MonoBehaviour
         lifeSlider.value = playerLifes;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public void DescreaseLife() {
-        playerLifes -= 1;
-        lifeSlider.fillRect.gameObject.SetActive(true);
+    public void DescreaseLife(int amount) {
+        playerLifes -= amount;
         lifeSlider.value = playerLifes;
         PrintRemainingLifes();
         if(playerLifes <= 0) {

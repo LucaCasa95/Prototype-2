@@ -7,9 +7,9 @@ public class AnimalHunger : MonoBehaviour
 {
 
     public Slider hungerSlider;
-    public int amountToBeFed = 3;
+    private int amountToBeFed = 3;
     private int currentFedAmount = 0;
-    //private LifeManager lifeManager;
+    private GameManager gameManager;
     //public AudioSource deathSound;
 
     // Start is called before the first frame update
@@ -17,25 +17,16 @@ public class AnimalHunger : MonoBehaviour
     {
         hungerSlider.maxValue = amountToBeFed;
         hungerSlider.value = 0;
-        //hungerSlider.fillRect.gameObject.SetActive(false);
-        //lifeManager = GameObject.Find("LifeManager").GetComponent<LifeManager>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     public void FeedAnimal(int amount)
     {
         currentFedAmount += amount;
-        //hungerSlider.fillRect.gameObject.SetActive(true);
         hungerSlider.value = currentFedAmount;
         if(currentFedAmount >= amountToBeFed)
         {
-            Debug.Log("Animale morto");
-            //lifeManager.IncreaseScore(amountToBeFed);
+            gameManager.IncreaseScore(amountToBeFed);
             Destroy(gameObject, 0.1f);
         }
     }

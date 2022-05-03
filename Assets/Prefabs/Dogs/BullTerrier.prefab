@@ -3041,8 +3041,8 @@ GameObject:
   - component: {fileID: 776247775086370499}
   - component: {fileID: 4454646784488183089}
   - component: {fileID: 903311166}
-  - component: {fileID: 6405685717821980688}
   - component: {fileID: -370546902942282959}
+  - component: {fileID: 6405685717821980688}
   m_Layer: 0
   m_Name: BullTerrier
   m_TagString: Dog
@@ -3133,7 +3133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dd9e592a600d4149ad4078cc0bfb22d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 8
 --- !u!114 &776247775086370499
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3172,7 +3172,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hungerSlider: {fileID: 8057969720312621142}
-  amountToBeFed: 1
+--- !u!114 &-370546902942282959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335960700408515007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 668074e685262af4da65f04789492065, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  feedAmount: 1
+  damageAmount: 1
 --- !u!82 &6405685717821980688
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3269,18 +3282,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &-370546902942282959
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1335960700408515007}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 668074e685262af4da65f04789492065, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1335960700408517825
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,7 +9,7 @@ public class SpawnManager : MonoBehaviour
     private float spawnRangeZ = 20;
     //spawn timer
     private float startDelay = 2;
-    private float frequencyInterval = 4f;
+    private float frequencyInterval = 1.5f;
     //rotation
     private float rotation = 90f;
 
@@ -18,12 +18,6 @@ public class SpawnManager : MonoBehaviour
     {
         InvokeRepeating("CreateRandomAnimalsTop", startDelay, frequencyInterval);
         InvokeRepeating("CreateRandomAnimalsLeftRight", startDelay, frequencyInterval);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 
     void CreateRandomAnimalsTop()

@@ -4,36 +4,25 @@ using UnityEngine;
 
 public class TriggerManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public int feedAmount = 1;
+    public int damageAmount = 1;
+    private GameManager gameManager;
+
+    private void Start() {
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Bone")
         {
-            Debug.Log("sono un cane, mi ha colpito un osso");
-            //dog hit by bone
-            gameObject.GetComponent<AnimalHunger>().FeedAnimal(1);
-            //spacco l'osso
+            gameObject.GetComponent<AnimalHunger>().FeedAnimal(feedAmount);
             Destroy(other.gameObject);
         }
-
         if (gameObject.tag == "Player")
         {
-            Debug.Log("sono il player, mi ha colpito un cane");
-            //dog hit by bone
-            gameObject.GetComponent<AnimalHunger>().FeedAnimal(1);
-            //spacco l'osso
-            Destroy(other.gameObject);
+            gameManager.DescreaseLife(damageAmount);
         }
     }
 }
